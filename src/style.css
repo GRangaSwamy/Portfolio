@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url('../public/Images/adrien-olichon-RCAhiGJsUUE-unsplash.jpg') center/cover no-repeat;
+    filter: blur(8px);
+    transform: scale(1.05);
+    z-index: -1;
+  }
+.navbar {
+    background-color: rgba(10, 20,3 0, 0.2);
+    backdrop-filter: blur(10px); 
+    border-radius: 10px;
+    padding: 10px;
+}
+.navbar-brand{
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.main-container{
+    width: 90%;
+    height: 80vh;
+}
+.main-content{
+    text-align: justify;
+}
+.main-container h4{
+    color: #AFDDFF;
+    font-size: 1.8rem;
+}
+.main-container h1{
+    font-size: 2.5rem;
+}
+ .left{
+    animation: slideLeft 1.3s ease-in-out forwards;
+}
+li{
+    margin-right: 1rem;
+}
+li a:hover{
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    backdrop-filter: blur(10px);
+    padding-left: 0.5rem;
+    text-decoration: underline;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.main-content{
+    display: inline-block;
+    animation: wave 2s infinite ease-in-out;
+}
+
+@keyframes wave {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+  .form-control{
+    margin-bottom: 1rem;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  .contact-me-form h4{
+    text-decoration: underline;
+    font-size: 2rem;
+    padding-bottom: 0.4rem;
+    text-align: start;
+  }
+  .text-loop div {
+    margin: 10px 0;
+  }
+  .text-loop-container {
+    max-width: 100%;
+    width: 100%;
+    text-align: start;
+  }
+  .aos-line {
+    margin-bottom: 0.75rem;
+    white-space: normal;
+    word-break: break-word;
+  }
+  .about-me-section p{
+    text-align: justify;
+  }
+  .about-me h1{
+    text-decoration: dashed;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid white;
+  }
+  .section-title{
+    font-family: 'Georgia', serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 1rem;
+    width: 80%;
+    color: #00ffff;
+    border-bottom: 2px solid #1180e8;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-align: center;
+    backdrop-filter: blur(10px); 
+  }
+.about-me-content a{
+    text-decoration: none;
+    color: black;
+}
+.portfolio h1{
+    text-align: center;
+}
+html {
+  scroll-behavior: smooth;
+}
+.card,.card-footer{
+  background-color: transparent;
+}
+.about-me-content{
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+.my-skills{
+  padding: 1rem;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.cursor {
+  display: inline-block;
+  animation: blink 0.8s infinite;
+  font-weight: bold;
+  color: #ffc107;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0; }
+}
+.footer-section a{
+  text-decoration: underline;
+  color: white;
+  padding: 1rem;
+}
+footer {
+  background: rgba(0, 0, 0, 0.4); 
+  backdrop-filter: blur(50px); 
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 0;
+  position: relative;
+  z-index: 10;
+}
+.footer-section a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-section a:hover {
+  color: #00ffff;
+}
+.skills{
+  margin-bottom: 2rem;
+}
+.edu{
+  /* border: 2px solid red; */
+  padding: 1rem;
+  /* background-color: #ff; */
+  box-shadow: 0 4px 10px gray;
+}
+.edu {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7), 
+              0 6px 6px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.edu:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8), 
+              0 10px 10px rgba(0, 0, 0, 0.6);
+}
+h1{
+  color: #00ffff;
+}
